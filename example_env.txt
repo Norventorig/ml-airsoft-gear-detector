@@ -1,0 +1,2 @@
+HF_TOKEN=your_HF_token
+API_KEY=api_key
