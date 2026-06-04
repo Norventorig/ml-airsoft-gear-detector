@@ -1,4 +1,8 @@
 from pathlib import Path
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -18,4 +22,4 @@ SUBCATEGORY_IMAGE_MODEL = (
     "best_model_11_classes.pth"
 )
 
-API_KEY = "super-secret-key"
+API_KEY = os.getenv("API_KEY")
